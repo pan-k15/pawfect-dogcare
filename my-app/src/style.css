@@ -1,0 +1,371 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+:root {
+  --color-indigo: #1230AE;
+  --color-skyblue: #6C48C5;
+  --color-softblue: #C68FE6;
+  --color-offwhite: #FFF7F7;
+}
+
+/* General Layout */
+.home-container {
+  padding: 2rem;
+  background-color: var(--color-offwhite);
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-indigo);
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: var(--color-skyblue);
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background-color: var(--color-softblue);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--color-skyblue);
+}
+
+/* Grid Section */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Service Cards */
+.service-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  border: 2px solid var(--color-softblue);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-skyblue);
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-indigo);
+}
+
+.service-desc {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.service-link {
+  color: var(--color-indigo);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+/* Page Wrapper */
+.page-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Title & Description */
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-indigo);
+  text-align: center;
+}
+
+.page-description {
+  font-size: 1rem;
+  color: var(--color-skyblue);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Form */
+.booking-form label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.booking-form input {
+  display: block;
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-softblue);
+  border-radius: 6px;
+}
+
+.booking-form input:focus {
+  outline: none;
+  border-color: var(--color-skyblue);
+  box-shadow: 0 0 0 2px rgba(108, 72, 197, 0.2);
+}
+
+.confirmation {
+  margin-top: 1.5rem;
+  color: green;
+  font-weight: 600;
+  text-align: center;
+}
+/* Section Block */
+.info-section {
+  margin-top: 2rem;
+}
+
+/* Section Heading */
+.section-heading {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--color-skyblue);
+  margin-bottom: 0.5rem;
+}
+
+/* Menu List */
+.menu-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #444;
+}
+
+.menu-list li {
+  margin-bottom: 0.5rem;
+}
+.booking-form select {
+  display: block;
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-softblue);
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.booking-form select:focus {
+  outline: none;
+  border-color: var(--color-skyblue);
+  box-shadow: 0 0 0 2px rgba(108, 72, 197, 0.2);
+}
+.navbar {
+  background-color: var(--color-indigo);
+  padding: 1rem;
+  color: white;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none; /* show on mobile only */
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+.auth-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid var(--color-softblue);
+  border-radius: 6px;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: var(--color-skyblue);
+  box-shadow: 0 0 0 2px rgba(108, 72, 197, 0.2);
+}
+
+.error-msg {
+  color: #ff4d4d;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.success-msg {
+  color: #28a745;
+  margin-top: 1rem;
+  font-weight: 600;
+}
