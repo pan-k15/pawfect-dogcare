@@ -59,7 +59,7 @@ button:focus-visible {
 }
 
 #app {
-  max-width: 1280px;
+  max-width: 15000px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -368,4 +368,75 @@ button:focus-visible {
   color: #28a745;
   margin-top: 1rem;
   font-weight: 600;
+}
+.service-card {
+  background: white;
+  color: #213547;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  border: 2px solid var(--color-softblue);
+}
+
+@media (prefers-color-scheme: dark) {
+  .service-card {
+    background: #1e1e1e;
+    color: white;
+  }
+}
+.service-card {
+  background: white;
+  color: #213547;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  border: 2px solid var(--color-softblue);
+}
+
+section {
+  color: var(--color-skyblue); 
+}
+.dog-action {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: none;
+
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  background-color: var(--color-indigo);
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  z-index: 100;
+  border-radius: 6px;
+  min-width: 150px;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
 }

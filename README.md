@@ -1,45 +1,39 @@
-# Pawfect Dogcare
-## 🐶 DogCare Vue App
+# 🐾 DogCare Center - Frontend
 
-A modern Vue 3 Single Page Application (SPA) for a dog care service center.  
-This webapp allows customers to explore and book services like Dog Run, Cafe, Wash & Dry, Grooming & Bath, and Dog Snacks.
+This is the frontend SPA (Single Page Application) for **DogCare Center**, a pet service platform offering dog grooming, bathing, laundry, snacks, cafe, and dog run services. Built with **Vue 3**, it connects to a Node.js + Express backend and provides a clean, responsive user interface.
 
-![Vue](https://img.shields.io/badge/Vue-3.x-42b883?logo=vue.js)
-![License](https://img.shields.io/github/license/your-username/dogcare-vue-app)
-![Status](https://img.shields.io/badge/status-In%20Development-yellow)
+## 🚀 Features
 
----
+- ✨ Member registration & login
+- 🐶 Add/view dogs
+- ✂️ Grooming & bath booking
+- 🧼 Wash & dry booking
+- 🏃 Dog run reservation
+- 🧺 Laundry service booking
+- 🍖 Dog snack browsing
+- ☕ Cafe menu
+- 👤 Member profile editing
+- 🔐 Token-based authentication (JWT)
 
-## 📋 Features
+## 🖼️ Screens & Pages
 
-- 🐕 Dog Run reservation form
-- ☕ Cafe information
-- 🧼 Wash & Dry service overview
-- ✂️ Grooming & Bath booking
-- 🍖 Snack and treat display
-- ⚡ Clean and responsive UI with Vue Router
+- `/register` – Register new user
+- `/login` – Login user
+- `/` – Home page showing added dogs
+- `/add-dog` – Form to add dog
+- `/laundry` – Book laundry service
+- `/grooming-bath` – Book grooming & bath
+- `/wash-dry` – Book wash & dry
+- `/dog-run` – Book dog run
+- `/snack` – View snack menu
+- `/cafe` – View cafe menu
+- `/setting` – Edit member info or password
 
----
+## 🧱 Tech Stack
 
-## 🧪 Tech Stack
+- **Vue 3**
+- **Vue Router**
+- **Fetch API**
+- **Vite**
+- **CSS / Tailwind-like custom styling**
 
-- [Vue 3](https://vuejs.org/)
-- [Vue Router](https://router.vuejs.org/)
-- [Vite](https://vitejs.dev/) (optional if using it)
-- [Tailwind CSS](https://tailwindcss.com/) (optional styling)
-- Future-ready for Firebase / Backend integration
-
----
-
-## 🚀 Project Setup
-
-```bash
-# Clone the repo
-git clone https://github.com/your-username/dogcare-vue-app.git
-cd dogcare-vue-app
-
-# Install dependencies
-npm install
-
-# Start the dev server
-npm run dev

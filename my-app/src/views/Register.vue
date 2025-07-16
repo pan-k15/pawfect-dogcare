@@ -27,6 +27,8 @@
 </template>
 
 <script>
+import API from '../api' // make sure this points to your Axios config
+
 export default {
   name: 'Register',
   data() {
@@ -42,27 +44,31 @@ export default {
     }
   },
   methods: {
-    handleRegister() {
+    async handleRegister() {
       this.error = ''
       this.success = ''
 
-      if (this.form.password !== this.form.confirmPassword) {
+      const { username, email, password, confirmPassword } = this.form
+
+      if (password !== confirmPassword) {
         this.error = 'Passwords do not match.'
         return
       }
-      // Basic username & email validation
-      if (this.form.username.length < 3) {
-        this.error = 'Username must be at least 3 characters.'
-        return
-      }
-      if (!this.form.email.includes('@')) {
-        this.error = 'Invalid email address.'
-        return
-      }
 
-      // Mock registration success (replace with API call)
-      this.success = `User "${this.form.username}" registered successfully!`
-      this.form = { username: '', email: '', password: '', confirmPassword: '' }
+      try {
+        const res = await API.post('/auth/register', {
+          username, // ✅ use "username" instead of "name"
+          email,
+          password,
+        })
+
+        this.success = `🎉 Registered as ${res.data.username}`
+        this.form = { username: '', email: '', password: '', confirmPassword: '' }
+
+        setTimeout(() => this.$router.push('/login'), 1500)
+      } catch (err) {
+        this.error = err.response?.data?.error || 'Registration failed.'
+      }
     },
   },
 }
